@@ -179,8 +179,8 @@ Python's `if` statements are conceptually similar to those in Java, but the synt
 
 - Parenthesis are not used to enclose expressions; instead they are terminated with a colon character
 - `else if` is shortened to `elif`
-- Curly braces are not used to provide scope
-- Scope is indicated with required indentation
+- Curly braces are not used to provide scope; that is indicated with required indentation
+- Use `and`, `or`, and `not` to combine expressions
 
 _Java_: 
 
@@ -188,11 +188,11 @@ _Java_:
     if (x > 10) {
         System.out.println("Greater than 10");
     }
-    else if (x < 5) {
-        System.out.println("Less than 5");
+    else if (x >= 5 && x <= 10) {
+        System.out.println("Between 5 and 10");
     }
     else {
-        System.out.println("Between 5 and 10");
+        System.out.println("Less than 5");
     }
 
 _Python_:
@@ -200,10 +200,10 @@ _Python_:
     x = 5
     if x > 10:
         print("Greater than 10")
-    elif x < 5:
-        print("Less than 5")
-    else:
+    elif x >= 5 and x <= 10:
         print("Between 5 and 10")
+    else:
+        print("Less than 5")        
         
 Note that blocks of a single line can be collapsed, for example:
 
