@@ -97,6 +97,15 @@ Bitwise operators are also supported for numbers: AND, OR, XOR, complement, and 
 
 NOTE: Python does not support the increment `++x` and decrement `--x` operators. Use `x += 1` and `x -= 1` instead.
 
+### `//` and `**`
+
+Python provides two convenience operators, `//` for division with an integer result and `**` for computing exponents.
+
+    x = 5
+    y = x // 2  # y equals 2
+
+    y = x ** 2  # y equals 25
+
 ## Simple Data Structures
 
 Both Java and Python have the concept of a simple array. Python uses "List" and "Tuple" for this data structure. Python also has Dictionaries for managing key-value pairs (similar to the Maps API present in Java's Collections framework). 
