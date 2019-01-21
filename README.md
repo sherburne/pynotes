@@ -216,6 +216,18 @@ Java and Python use the same set of comparison operators: equals `==`, not-equal
 
     x = 7
     if x < 5 and x > 10: print("x is in range")
+    
+#### Ternary Expressions
+
+Java and Python both support convenient ternary expressions when you need a compact expression on a single line. Python's structure places the positive outcome first, followed by the expression, then the negative outcome.
+
+_Java_:
+
+    System.out.print(x > 5 ? 'Greater than 5' : '5 or less');
+    
+_Python_:
+
+    print ('Greater than 5' if x > 5 else '5 or less')
 
 ### Loops
 
